@@ -13,8 +13,8 @@
 
 语义化标签：如 `<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>`等。
 增强的表单控件：如 email, url, date, color, range 等新的 input 类型。
-多媒体标签：`<audio`> 和 `<video> `用于嵌入多媒体内容。
-图形和绘图：`<canvas> `用于 JavaScript 绘图，`<svg> `用于可缩放矢量图形。
+多媒体标签：`<audio>` 和 `<video>` 用于嵌入多媒体内容。
+图形和绘图：`<canvas>` 用于 JavaScript 绘图，`<svg>` 用于可缩放矢量图形。
 
 ### CSS 高阶特性：
 
@@ -46,6 +46,9 @@
 - requestAnimationFrame 用于优化动画
 
 ## demo1 高级待办事项列表 
+
+入口：`demo1/index.html`（按顶部说明用本地服务器打开）
+
 这个待办事项列表应用展示了更多的HTML、CSS和JavaScript概念:
 
 HTML:
@@ -72,6 +75,8 @@ JavaScript:
 
 ## demo2 高级图片库
 
+入口：`demo2/index.html`（按顶部说明用本地服务器打开）
+
 包含以下特性：
 
 - 使用 CSS Grid 创建响应式布局。
@@ -84,26 +89,23 @@ JavaScript:
 
 ## demo3 智能家居控制面板
 
-高级版本的待办事项列表应用引入了许多新概念和最佳实践：
+入口：`demo3/index.html`（按顶部说明用本地服务器打开）
 
-- 模块化 JavaScript:
-  我们将 JavaScript 代码分割成了多个模块（TodoList 和 ThemeManager），这有助于代码的组织和维护。
-- CSS 变量和主题切换:
-  使用 CSS 变量（--primary-color 等）使得主题切换变得简单。我们添加了一个主题切换按钮，可以在浅色和深色主题之间切换。
-  高级 CSS 技巧:
-- 使用 CSS transitions 为各种交互添加了平滑的动画效果。
-  利用 CSS transforms 创建了删除待办事项时的滑出动画。
+一个智能家居设备控制面板，展示模块化前端设计与状态管理实践：
 
-- 状态管理:
-  待办事项现在有了完成状态，可以标记为已完成或未完成。
-  过滤功能:
-  添加了过滤按钮，可以显示全部、未完成或已完成的待办事项。
-- 本地存储:
-  （在 TodoList 模块中实现）使用 localStorage 来保存待办事项，使其在页面刷新后仍然存在。
-- 事件委托:
-  （在 TodoList 模块中实现）使用事件委托来处理待办事项的点击事件，提高了性能。
+- 设备控制：通过 `modules/lighting.js` / `modules/temperature.js` 控制灯光开关与房间温度（客厅 / 卧室温度滑杆）。
+- 天气小部件：`modules/weather.js` 展示实时天气信息。
+- 能耗统计：`modules/energy.js` 配合 Chart.js（CDN 引入）绘制能耗图表。
+- 自动化规则：`modules/automation.js` 覆盖自动化场景；`modules/notification.js` 处理设备状态通知。
+- 待办卡片：页面中附带一个待办事项卡片（`modules/todo.js`）。
+- 可拖拽布局：`modules/draggableManager.js` 实现卡片拖拽排布。
+- 主题切换：`modules/theme.js` 实现浅色 / 深色主题切换（与 demo1 的 ThemeManager 一脉相承）。
+- 数据层：`services/dataService.js` 统一提供设备数据。
 
 ## demo4 高级图表仪表板
+
+入口：`demo4/index.html`（按顶部说明用本地服务器打开）
+
 ### 项目将包含以下功能：
 
 - 使用 Chart.js 库来绘制图表
@@ -155,6 +157,8 @@ JavaScript:
 
 
 ## demo5 卡片式在线编辑器
+
+入口：`demo5/index.html`（按顶部说明用本地服务器打开）
 
 这个项目展示了如何创建一个功能丰富的在线代码编辑器，包括以下特性：
 

@@ -173,3 +173,6 @@ JavaScript:
 状态管理：使用 LocalStorage 管理应用状态（保存的代码）。
 第三方库集成：集成 CodeMirror 和 Prettier 等库，增强功能。
 响应式设计：使用 CSS flexbox 和媒体查询创建响应式布局。
+
+---
+> **声明**：本仓库为个人项目，仅供学习交流。
